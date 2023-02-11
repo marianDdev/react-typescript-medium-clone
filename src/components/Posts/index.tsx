@@ -5,7 +5,10 @@ export const Posts = () => {
   return (
     <>
       {posts.map((post, index) => (
-        <Post post={post} key={index} />
+        <>
+          <Post key={index} />
+          <hr />
+        </>
       ))}
     </>
   );

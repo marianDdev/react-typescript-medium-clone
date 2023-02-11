@@ -1,3 +1,5 @@
-export const Post = ({ post }) => {
-  return <p>Post with title {post}</p>;
+import Button from '../index';
+
+export const Post = () => {
+  return <Button />;
 };

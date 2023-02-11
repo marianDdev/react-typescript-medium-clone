@@ -1,17 +1,11 @@
-import { Posts } from '../components/Posts';
-import { Footer } from '../layouts/footer';
-import { Header } from '../layouts/header';
-import { Navbar } from '../layouts/navbar';
-import { Sidebar } from '../layouts/sidebar';
+import { Posts } from '../../components/Posts';
+import { Layout } from '../../layout';
 
 export const Homepage = () => {
   return (
     <>
-      <Navbar />
-      <Header />
+      <Layout />
       <Posts />
-      <Sidebar />
-      <Footer />
     </>
   );
 };
