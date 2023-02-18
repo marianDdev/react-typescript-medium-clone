@@ -1,20 +1,13 @@
-import { AuthorInterface } from '../../interfaces/author';
-import { CategoryInterface } from '../../interfaces/category';
 import { PostInterface } from '../../interfaces/post';
-import { postsMock } from '../../utils/posts-mock';
 import { Post } from '../Post';
 
-export const Posts = () => {
-  const posts = postsMock;
-  
+export const Posts = (props: { posts: PostInterface[] }) => {
+  let posts: PostInterface[] = props.posts;
   return (
     <>
-      {posts.map((post) => (
-        <>
-          <Post key={post.id} />
-          <hr />
-        </>
-      ))}
+      {posts.map(post => {
+        return <Post key={post.id} post={post} />;
+      })}
     </>
   );
 };

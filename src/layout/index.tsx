@@ -1,12 +1,5 @@
-import { Footer } from './components/Footer';
-import { Header } from './components/Header';
-import { Navbar } from './components/Navbar';
+import { PropsWithChildren } from 'react';
 
-export const Layout = () => {
-  return (
-    <>
-      <Header />
-      <Navbar />
-    </>
-  );
+export const Layout = ({ children }: PropsWithChildren) => {
+  return <div className='container'>{children}</div>;
 };
