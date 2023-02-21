@@ -2,6 +2,7 @@ import { AuthorInterface } from './author';
 import { CategoryInterface } from './category';
 
 export interface PostInterface {
+  id: number,
   author: AuthorInterface;
   createdAt: Date;
   title: string;
