@@ -1,4 +1,4 @@
-import './App.css';
+import './index.css';
 import { Posts } from './components/Posts';
 import { PostInterface } from './interfaces/post';
 import { Layout } from './layout';
